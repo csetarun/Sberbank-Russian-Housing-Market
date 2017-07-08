@@ -58,7 +58,3 @@ test_args$max_floor = as.factor(test_args$max_floor)
 test_args$state = as.factor(test_args$state)
 test_args$product_type=as.factor(test_args$product_type)
 test_args=data.frame(test_args)
-
-output$price_doc = as.numeric(output$price_doc)
-#model<-randomForest(data=args,output,keep.forest = TRUE)
-model<-randomForest(price_doc ~ .,data=args,keep.forest = TRUE)
